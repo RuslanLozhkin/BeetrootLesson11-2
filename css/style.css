@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+html,
+body{
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	-ms-align-self: center;
+	align-self: center;
+	font-family:'Museo Sans Rounded 100';
+	background-color: #111a28;
+}
+.cart--wrapper{
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	background: url('bg.png');
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 800px;
+	height: 600px;
+}
+.cart{
+	position: relative;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	width: 686px;
+    height: 391px;
+    border-radius: 10px;
+    background-color: rgb(17, 26, 40);
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, .82);
+}
+.cart__logo{
+	position: absolute;
+	left: 24px;
+	top:24px;
+}
+.details{
+	width: 185px;
+}
+.details__title{
+	font-size: 24px;
+	line-height: 26px;
+	color: #fff;
+	text-transform: capitalize;
+}
+.details__subtitle{
+	font-size: 14px;
+	line-height: 26px;
+	opacity: .54;
+	color: #fff;
+	text-transform: capitalize;
+}
+.rating{
+  width: 125px;
+  height: 12px;
+  margin: 27px 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.rating input[type="radio"] {
+  display: none;
+}
+.rating__label{
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(rating.png) no-repeat 50% 0;
+  cursor: pointer;
+}
+
+.rating .rating__label:hover, 
+.rating .rating__label:hover ~ .rating__label, 
+.rating input[type="radio"]:checked ~ .rating__label
+{
+  background-position: 50% -12px;
+}
+.form{
+	width: 185px;
+	display: flex;
+	flex-direction: column;
+}
+.form__submit{
+	width: 182px;
+	height: 38px;
+	border: 1px solid rgba(255, 255, 255, .26);
+	font-size: 14px;
+	background-color: rgba(76, 82, 90, .26);
+	color: #fff;
+}
+.form__selectwrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 30px;
+}
+.form__sizeselect select,
+.form__qtyselect select{
+	display: block;
+	border: 1px solid rgba(255,255,255,.26);
+	padding: 0 14px;
+	background: none;
+	width: 67px;
+	height: 30px;
+	color: #e1e1e1;
+	font-family: inherit;
+	font-size: 14px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form__sizeselect{
+	margin-right: 2px;
+}
+.form__selectwrapper,
+.form__qtyselect{
+	position: relative;
+	width: 67px;
+	height: 30px;
+}
+.form__sizeselect::after,
+.form__qtyselect::after{
+	display: block;
+	content: '';
+	background: url(select-arr.png);
+	background-position: 0 30%;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	z-index: 1;
+	pointer-events: none;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 4px;
+	border-color: transparent;
+}

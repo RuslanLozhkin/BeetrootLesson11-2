@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/style.css">
+	<title>Cart</title>
+</head>
+<body>
+	<article class="cart--wrapper">
+		<section class="cart">
+			<div class="cart__logo">
+				<img src="img/logo.svg" alt="Logo">
+			</div>
+			<div class="cart__img">
+				<img src="img/Nike-SB-Stefan-Janoski-Max.png" alt="Nike-SB-Stefan-Janoski-Max" title="Nike-SB-Stefan-Janoski-Max">
+			</div>
+			<div class="details">
+				<div class="details__title">
+					Nike SB Stefan Janoski Max
+				</div>
+				<div class="details__subtitle">
+					Unisex Skateboarding Shoe
+				</div>
+				<div class="rating">
+				    <input name="rating" value="5" id="rating_5" type="radio" >
+				    <label for="rating_5" class="rating__label"></label>
+				    <input name="rating" value="4" id="rating_4" type="radio" >
+				    <label for="rating_4" class="rating__label"></label>
+				    <input name="rating" value="3" id="rating_3" type="radio" >
+				    <label for="rating_3" class="rating__label"></label>
+				    <input name="rating" value="2" id="rating_2" type="radio" >
+				    <label for="rating_2" class="rating__label"></label>
+				    <input name="rating" value="1" id="rating_1" type="radio" >
+				    <label for="rating_1" class="rating__label"></label>
+				</div>
+				<form action="#" method="get" class="form">
+					<div class="form__selectwrapper">
+						<div class="form__sizeselect">
+							<select>
+								<option value="Size" selected="Size">Size</option>
+								<option value="45">45</option>
+								<option value="44">44</option>
+								<option value="43">43</option>
+								<option value="42">42</option>
+								<option value="41">41</option>
+							</select>
+						</div>
+						<div class="form__qtyselect">
+							<select>
+								<option value="Qty" selected="Qty">
+									Qty
+								</option>
+								<option value="Wty">
+									Wty
+								</option>
+								<option value="Ety">
+									Ety
+								</option>
+								<option value="Rty">
+									Rty
+								</option>
+								<option value="Tty">
+									Tty
+								</option>
+								<option value="Yty">
+									Yty
+								</option>
+							</select>
+						</div>
+					</div>
+					<input type="submit" value="Add to cart" class="form__submit">
+				</form>
+			</div>
+		</section>
+	</article>
+</body>
+</html>
